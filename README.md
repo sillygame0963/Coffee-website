@@ -1,4 +1,5 @@
 # Download TailwindCss and ReactJs
+To run these files, you need to install some packages from TailwindCSS and ReactJs.
 
 link download: https://tailwindcss.com/docs/installation
 
