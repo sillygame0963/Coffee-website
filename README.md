@@ -1,7 +1,7 @@
 # Download TailwindCss and ReactJs
 To run these files, you need to follow these steps:
 <ol>
-  <li>clone your repository
+  <li>clone repository
   <li>run "npm -i"
   <li>ng serve
 </ol><br />
