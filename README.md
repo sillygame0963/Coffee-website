@@ -3,7 +3,7 @@ To run these files, you need to follow these steps:
 <ol>
   <li>clone repository
   <li>run "npm -i"
-  <li>ng serve
+  <li>run "yarn add react-router-dom"
 </ol><br />
 
 Link download TailwindCss: https://tailwindcss.com/docs/installation
