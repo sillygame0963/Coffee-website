@@ -1,7 +1,12 @@
 # Download TailwindCss and ReactJs
-To run these files, you need to install some packages from TailwindCSS and ReactJs.
+To run these files, you need to follow these steps:
+<ol>
+  <li>clone your repository
+  <li>run "npm -i"
+  <li>ng serve
+</ol><br />
 
-link download: https://tailwindcss.com/docs/installation
+Link download TailwindCss: https://tailwindcss.com/docs/installation
 
 This website was based on CoffeeStyle template (https://coffeestyle-template.webflow.io)
 
