@@ -8,8 +8,8 @@ This website was based on CoffeeStyle template (https://coffeestyle-template.web
 To run the website, following these steps below:
 
 <ul>
-  <li>Open the terminal in Visual Studio Code (VS Code), then run these commands:  
-  <br />
+  <li>Open the terminal in Visual Studio Code (VS Code), then run these commands: 
+    <br />
   ~ cd coffee-website/<br />
   ~ yarn start
 </ul>
