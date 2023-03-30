@@ -36,9 +36,9 @@ const Navbar = () => {
                 {/* BLOG */}
               </li>
               <li className="top-menu-item">
-                <Link to="/blog" className="">
+                <a href="/blog" className="">
                   Blog
-                </Link>
+                </a>
                 
               </li>
               <li className="top-menu-item">
