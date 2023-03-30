@@ -5,4 +5,13 @@ link download: https://tailwindcss.com/docs/installation
 
 This website was based on CoffeeStyle template (https://coffeestyle-template.webflow.io)
 
+To run the website, following these steps below:
+
+<ul>
+  <li>Open the terminal in Visual Studio Code (VS Code), then run these commands:  
+  <br />
+  ~ cd coffee-website/<br />
+  ~ yarn start
+</ul>
+<br />
 The Responsive Navbar is fixing. 🥲 
