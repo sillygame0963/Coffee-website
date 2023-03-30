@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -25,31 +26,38 @@ const Navbar = () => {
                 <a href="/" className="">
                   Home
                 </a>
+                
               </li>
               <li className="top-menu-item">
                 <a href="/" className="">
                   Products
                 </a>
+                
+                {/* BLOG */}
               </li>
               <li className="top-menu-item">
-                <a href="/" className="">
+                <Link to="/blog" className="">
                   Blog
-                </a>
+                </Link>
+                
               </li>
               <li className="top-menu-item">
                 <a href="/" className="">
                   About
                 </a>
+                
               </li>
               <li className="top-menu-item">
                 <a href="/" className="">
                   Contact
                 </a>
+                
               </li>
               <li className="top-menu-item">
                 <a href="/" className="">
                   StyleGuide
                 </a>
+                
               </li>
               <li className="top-menu-item top-menu-item-active">
                 <a
