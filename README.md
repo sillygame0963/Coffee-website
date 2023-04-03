@@ -2,7 +2,7 @@
 To run these files, you need to follow these steps:
 <ol>
   <li>clone repository
-  <li>run "npm -i"
+  <li>run "npm i -g yarn
   <li>run "yarn add react-router-dom"
 </ol><br />
 
