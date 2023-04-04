@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lexend+Deca:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&family=Nunito+Sans:wght@300;400;600;700&family=Nunito:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&family=Oswald:wght@300;400;500;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "react-slideshow-image/dist/styles.css";
+
+.ts-menu-expanded {
+  @apply absolute top-20 w-full bg-white animate-slideDown;
+}
+
+.top-menu-item {
+  @apply cursor-pointer py-1 hover:text-gray-800 font-semibold tracking-widest relative after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-coffee-200 after:lg:h-0.5 after:lg:w-0 hover:after:lg:w-full after:lg:transition-all after:lg:ease-in-out after:lg:duration-300;
+}
+
+.top-menu-item-active {
+  @apply text-gray-800;
+}
+
+.ts-icon {
+  @apply w-5 h-5 inline-block;
+}
+
+.ts-amount {
+  @apply text-xs text-center rounded-full px-1.5;
+}
+
+.ts-subheadline {
+  @apply flex justify-center items-center mb-24;
+}
+
+.ts-decor {
+  @apply w-8 h-px bg-gray-200;
+}
+
+.ts-content {
+  @apply text-center uppercase px-3 text-[12px] font-medium tracking-widest text-gray-500;
+}
+
+.ts-button {
+  @apply text-center uppercase tracking-widest cursor-pointer hover:bg-opacity-90 text-sm font-semibold px-8 py-4;
+}
+
