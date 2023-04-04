@@ -3,8 +3,10 @@ import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import useScrollPosition from "../../SettingsPage/useScrollPosition";
 
+import Footer from "../../components/Footer";
+import Subscribe from "../../components/Subscribe";
+
 function Blog() {
-  // NAVBAR
   const [toggle, setToggle] = useState(false);
 
   const handleClick = () => {
@@ -19,17 +21,20 @@ function Blog() {
 
   return (
     <>
+      {/* NAVBAR */}
       <div
         className={classNames(
           scrollPosition > 0 ? "shadow" : "shadow-none",
-          "sticky top-0 z-20 bg-gray-50 transition-shadow",
+          "sticky top-0 z-20 bg-gray-50 transition-shadow rounded-b-lg",
           "content-wrapper font-Karla h-20 max-w-screen-2xl text-base mx-auto px-8"
         )}
       >
         <header className="py-6 mx-auto">
           <nav className="flex flex-row justify-between items-center">
             <div className="logo basis-2/6 text-center text-xl font-semibold cursor-pointer">
-              <a href="/" className="">CoffeeStyle.</a>
+              <a href="/" className="">
+                CoffeeStyle.
+              </a>
             </div>
             <ul
               className={`lg:basis-3/6 lg:flex lg:items-center lg:justify-end gap-8 uppercase text-sm text-gray-500 font-medium ${
@@ -124,7 +129,6 @@ function Blog() {
       </div>
 
       {/* BLOG */}
-
       <div className="wrap flex flex-col justify-center items-center bg-gray-100 h-[563px] mb-[10px]">
         <div className="pt-[100px] pb-[110px]">
           <div className="text-[36px] mb-[15px]">
@@ -142,7 +146,6 @@ function Blog() {
           <div className="ts-decor"></div>
         </div>
       </div>
-
       <div className="feature-post w-95% xl:w-[65%] mx-auto mt-[-60px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-4">
           {/* #1 */}
@@ -211,9 +214,7 @@ function Blog() {
           </div>
         </div>
       </div>
-
       {/* BLOG FEEDS */}
-
       <div className="wrap lg:flex lg:flex-col justify-center items-center mt-[50px] mb-[10px]">
         <div className="w-[80%] md:w-[65%] mx-auto">
           <div className="lg:flex lg:flex-row flex-col">
@@ -435,134 +436,11 @@ function Blog() {
           </div>
         </div>
       </div>
-
       {/* SUBSCRIBE FORM */}
-      <div className="subscribe h-[350px] bg-[#1d1f2e] flex flex-col justify-center items-center mb-24 ">
-        <div className="flex justify-center items-center px-6 sm:px-0">
-          <div className="w-8 h-px bg-gray-600"></div>
-          <div className="uppercase px-3 text-[12px] font-bold tracking-widest text-gray-400">
-            Sign up and get free coffee bags
-          </div>
-          <div className="w-8 h-px bg-gray-600"></div>
-        </div>
-
-        <div className="text-[36px] mt-[10px] mb-3 tracking-wider text-white">
-          Coffee Updates
-        </div>
-
-        <div className="form">
-          <div className="md:flex justify-center items-center">
-            <div className="email">
-              <input
-                placeholder="sonnt03@gmail.com"
-                type="email"
-                className="px-6 py-4 mr-[10px] w-[350px] bg-inherit border-[1px] border-gray-600 outline-none leading-5 text-white hover:border-gray-300 duration-700 placeholder:uppercase placeholder:tracking-widest placeholder:text-xs placeholder:font-semibold"
-              />
-            </div>
-            <div className="button">
-              <button
-                type="submit"
-                className="mx-auto md:mx-0 w-max mt-[10px] md:mt-0 ts-button bg-white text-gray-900"
-              >
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Subscribe />
 
       {/* FOOTER */}
-      <div className="footer w-95% lg:w-[65%] mx-auto pb-24 text-[14px] text-gray-500">
-        <div className=" flex gap-8 md:text-left text-center md:flex-row flex-col">
-          <div className="basis-2/6 ml-[5px]">
-            <div className="text-xl font-semibold cursor-pointer mb-5 text-black">
-              CoffeeStyle.
-            </div>
-            <div className="text-[14px] text-gray-400 mb-[100px]">
-              Delivering the best coffee life since 1996. From coffee geeks to
-              the real ones.
-            </div>
-            <div className="text-[14px] text-gray-300 hover:text-coffee-400 duration-500">
-              CoffeeStyle Inc. © 1996
-            </div>
-          </div>
-
-          <div className="basis-1/6">
-            <div className="uppercase font-semibold tracking-widest text-[12px] mb-[20px]">
-              Menu
-            </div>
-
-            <div className="flex flex-col gap-4">
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Home
-                </a>
-              </div>
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Our Products
-                </a>
-              </div>
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  About
-                </a>
-              </div>
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Contact
-                </a>
-              </div>
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Styleguide
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="basis-1/6">
-            <div className="uppercase font-semibold tracking-widest text-[12px] mb-[20px]">
-              Follow us
-            </div>
-            <div className="flex flex-col gap-4">
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Facebook
-                </a>
-              </div>
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Instagram
-                </a>
-              </div>
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Pinterest
-                </a>
-              </div>
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Twitter
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="basis-2/6">
-            <div className="uppercase font-semibold tracking-widest text-[12px] mb-[20px]">
-              Contact us
-            </div>
-            <div className="mb-4">We're Always Happy to Help</div>
-            <div className="text-[24px] text-gray-800 mb-[70px]">
-              <a href="mailto:sonnt03@gmail.com" className="">
-                sonnt03@gmail.com
-              </a>
-            </div>
-            <div className="text-[14px] text-gray-300">Design by Thai Son</div>
-          </div>
-        </div>
-      </div>
+      <Footer />
     </>
   );
 }
