@@ -14,7 +14,7 @@ const Footer = () => {
               Delivering the best coffee life since 1996. From coffee geeks to
               the real ones.
             </div>
-            <div className="text-[14px] text-gray-300 hover:text-coffee-400 duration-500">
+            <div className="text-[14px] text-gray-300 hover:text-coffee-400 duration-500 -mt-6 lg:mt-0">
               CoffeeStyle Inc. © 1996
             </div>
           </div>
@@ -31,23 +31,27 @@ const Footer = () => {
                 </a>
               </div>
               <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
+                <a
+                  href="/Product"
+                  className=" hover:text-coffee-400 duration-500"
+                >
                   Our Products
                 </a>
               </div>
               <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
+                <a
+                  href="/About"
+                  className=" hover:text-coffee-400 duration-500"
+                >
                   About
                 </a>
               </div>
               <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
+                <a
+                  href="/Contact"
+                  className=" hover:text-coffee-400 duration-500"
+                >
                   Contact
-                </a>
-              </div>
-              <div className="">
-                <a href="/" className=" hover:text-coffee-400 duration-500">
-                  Styleguide
                 </a>
               </div>
             </div>
