@@ -2,7 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "react-slideshow-image/dist/styles.css";
 
 .ts-menu-expanded {
   @apply absolute top-20 w-full bg-white animate-slideDown;
