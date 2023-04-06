@@ -15,7 +15,7 @@ To run the website, following these steps below:
 <ul>
   <li>Open the terminal in Visual Studio Code (VS Code), then run these commands: 
     <br />
-  ~ cd coffe-web--main/<br />
+  ~ cd Coffee-website/<br />
   ~ yarn start
 </ul>
 <br />
