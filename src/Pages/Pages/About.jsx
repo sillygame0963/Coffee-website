@@ -23,7 +23,7 @@ export default function About() {
       <div
         className={classNames(
           scrollPosition > 0 ? "shadow" : "shadow-none",
-          "sticky top-0 z-20 bg-gray-50 transition-shadow rounded-b-lg",
+          "sticky -top-1 z-20 bg-gray-50 transition-shadow rounded-b-lg",
           "content-wrapper font-Karla h-20 max-w-screen-2xl text-base mx-auto px-8"
         )}
       >
@@ -155,7 +155,7 @@ export default function About() {
         <div className="ts-decor"></div>
       </div>
 
-      <div className="flex flex-col justify-center items-center lg:px-[500px]">
+      <div className="flex flex-col justify-center items-center mx-5 md:px-[100px] lg:px-[400px]">
         <div className="text-[25px] mb-[15px]">
           Overlaid the jeepers uselessly much excluding everyday life.
         </div>
