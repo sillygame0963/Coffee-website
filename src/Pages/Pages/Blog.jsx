@@ -25,7 +25,7 @@ function Blog() {
       <div
         className={classNames(
           scrollPosition > 0 ? "shadow" : "shadow-none",
-          "sticky top-0 z-20 bg-gray-50 transition-shadow rounded-b-lg",
+          "sticky -top-1 z-20 bg-gray-50 transition-shadow rounded-b-lg",
           "content-wrapper font-Karla h-20 max-w-screen-2xl text-base mx-auto px-8"
         )}
       >
@@ -216,17 +216,17 @@ function Blog() {
       </div>
       {/* BLOG FEEDS */}
       <div className="wrap lg:flex lg:flex-col justify-center items-center mt-[50px] mb-[10px]">
-        <div className="w-[80%] md:w-[65%] mx-auto">
+        <div className="w-[80%] md:w-[%] mx-auto">
           <div className="lg:flex lg:flex-row flex-col">
             <div className="lg:basis-2/3 text-center">
-              <div className="text-coffee-900 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-gray-100 hover:after:bg-coffee-200 after:h-0.5 after:w-[90%] after:transition-all after:ease-in-out after:duration-400">
+              <div className="text-coffee-900 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-gray-100 hover:after:bg-coffee-200 after:h-0.5 after:w-full lg:after:w-[90%] after:transition-all after:ease-in-out after:duration-400">
                 <div className="mb-[30px] md:mb-0 text-[22px] md:text-left text-center">
                   Latest Post
                 </div>
               </div>
               {/* IMAGE #1 */}
-              <div className="ts-end-img md:flex md:flex-row justify-center items-center">
-                <div className="h-[210px] w-[339px] mx-auto bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a5e47ece03c_Blog%20Pic%20Head%208.jpg')] bg-no-repeat bg-cover bg-center">
+              <div className="ts-end-img md:flex md:flex-row justify-center items-center lg:-ml-[66px]">
+                <div className="h-[210px] lg:w-[339px] bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a5e47ece03c_Blog%20Pic%20Head%208.jpg')] bg-no-repeat bg-cover">
                   <a href="/" alt="">
                     <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:lg:transition-all hover:lg:ease-in-out hover:lg:duration-800 relative group">
                       <div className="absolute rounded-none w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn  bg-white text-black px-8 py-4 ts-button">
@@ -258,8 +258,8 @@ function Blog() {
                 </div>
               </div>
               {/* IMAGE #2 */}
-              <div className="ts-end-img md:flex md:flex-row justify-center items-center">
-                <div className="h-[210px] w-[339px] mx-auto bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a3042ece037_Blog%20Pic%20Head%207.jpg')] bg-no-repeat bg-cover bg-center">
+              <div className="ts-end-img md:flex md:flex-row justify-center items-center lg:-ml-[66px]">
+                <div className="h-[210px] lg:w-[339px] bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a3042ece037_Blog%20Pic%20Head%207.jpg')] bg-no-repeat bg-cover bg-center">
                   <a href="/" alt="">
                     <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:lg:transition-all hover:lg:ease-in-out hover:lg:duration-800 relative group">
                       <div className="absolute rounded-none w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn  bg-white text-black px-8 py-4 ts-button">
@@ -291,8 +291,8 @@ function Blog() {
                 </div>
               </div>
               {/* IMAGE #3 */}
-              <div className="ts-end-img md:flex md:flex-row justify-center items-center">
-                <div className="h-[210px] w-[339px] mx-auto bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg')] bg-no-repeat bg-cover bg-center">
+              <div className="ts-end-img md:flex md:flex-row justify-center items-center lg:-ml-[66px]">
+                <div className="h-[210px] lg:w-[339px] bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg')] bg-no-repeat bg-cover bg-center">
                   <a href="/" alt="">
                     <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:lg:transition-all hover:lg:ease-in-out hover:lg:duration-800 relative group">
                       <div className="absolute rounded-none w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn  bg-white text-black px-8 py-4 ts-button">
@@ -324,8 +324,8 @@ function Blog() {
                 </div>
               </div>
               {/* IMAGE #4 */}
-              <div className="ts-end-img md:flex md:flex-row justify-center items-center">
-                <div className="h-[210px] w-[339px] mx-auto bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg')] bg-no-repeat bg-cover bg-center">
+              <div className="ts-end-img md:flex md:flex-row justify-center items-center lg:-ml-[66px]">
+                <div className="h-[210px] lg:w-[339px] bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg')] bg-no-repeat bg-cover bg-center">
                   <a href="/" alt="">
                     <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:lg:transition-all hover:lg:ease-in-out hover:lg:duration-800 relative group">
                       <div className="absolute rounded-none w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn  bg-white text-black px-8 py-4 ts-button">
@@ -357,8 +357,8 @@ function Blog() {
                 </div>
               </div>
               {/* IMAGE #5 */}
-              <div className="ts-end-img md:flex md:flex-row justify-center items-center">
-                <div className="h-[210px] w-[339px] mx-auto bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg')] bg-no-repeat bg-cover bg-center">
+              <div className="ts-end-img md:flex md:flex-row justify-center items-center lg:-ml-[66px]">
+                <div className="h-[210px] lg:w-[339px] bg-[url('https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg')] bg-no-repeat bg-cover bg-center">
                   <a href="/" alt="">
                     <div className="w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:lg:transition-all hover:lg:ease-in-out hover:lg:duration-800 relative group">
                       <div className="absolute rounded-none w-11/12 bottom-4 left-1/2 -translate-x-1/2 hidden group-hover:block group-hover:animate-fadeIn  bg-white text-black px-8 py-4 ts-button">
@@ -390,8 +390,10 @@ function Blog() {
                 </div>
               </div>
             </div>
+
+            {/* ABOUT */}
             <div className="basis-1/3 text-center md:text-left">
-              <div className="text-gray-900 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-gray-100 hover:after:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400">
+              <div className="text-gray-900 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-gray-100 hover:after:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400 mt-10">
                 <div className="text-[22px]">About us</div>
               </div>
 
@@ -399,11 +401,11 @@ function Blog() {
                 <div className="logo text-xl font-semibold cursor-pointer">
                   CoffeeStyle.
                 </div>
-                <div className="text-[16px] lg:mt-[10px] lg:mb-[15px] lg:tracking-widest text-gray-500">
+                <div className="text-[16px] lg:mt-[10px] lg:mb-[15px] lg:tracking-widest text-gray-500 mt-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Suspendisse varius enim in eros elementum tristique.
                 </div>
-                <div className="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:h-0.5 lg:after:w-[40%] after:transition-all after:ease-in-out after:duration-400">
+                <div className="text-coffee-400 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:h-0.5 lg:after:w-[43%] after:transition-all after:ease-in-out after:duration-400 mt-5 lg:mt-0">
                   <a href="/">Read the full Story</a>
                 </div>
               </div>
@@ -413,7 +415,7 @@ function Blog() {
                 <div className="text-[22px]">Categories</div>
               </div>
 
-              <div className="my-5">
+              <div className="my-10">
                 <ul className="">
                   <li className="text-gray-500 hover:text-coffee-600 relative after:absolute after:-bottom-2 after:left-0 after:bg-coffee-50 hover:after:bg-coffee-200 after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400 w-full h-full hover:bg-gray-900 hover:bg-opacity-10 hover:lg:transition-all hover:lg:ease-in-out hover:lg:duration-800">
                     <a href="/">Barista</a>
@@ -436,6 +438,7 @@ function Blog() {
           </div>
         </div>
       </div>
+
       {/* SUBSCRIBE FORM */}
       <Subscribe />
 
