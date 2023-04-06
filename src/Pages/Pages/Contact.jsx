@@ -23,7 +23,7 @@ export default function Contact() {
       <div
         className={classNames(
           scrollPosition > 0 ? "shadow" : "shadow-none",
-          "sticky top-0 z-20 bg-gray-50 transition-shadow rounded-b-lg",
+          "sticky -top-1 z-20 bg-gray-50 transition-shadow rounded-b-lg",
           "content-wrapper font-Karla h-20 max-w-screen-2xl text-base mx-auto px-8"
         )}
       >
@@ -198,13 +198,15 @@ export default function Contact() {
 
       {/* CONTACT FORM */}
 
-      <div className="flex justify-center items-center mb-10 drop-shadow-xl mt-20">
+      <div className="flex justify-center items-center mb-10 lg:drop-shadow-xl mt-20">
         <form
           action="/"
-          className="w-full md:w-auto border border-gray-200 p-6 bg-white lg:flex lg:flex-row flex-col lg:basis-3/2 mt-10 rounded-lg"
+          className="w-full md:w-auto lg:border lg:border-gray-200 p-6 bg-white lg:flex lg:flex-row flex-col lg:basis-3/2 mt-10 lg:rounded-lg"
         >
-          <div className="lg:text-left mt-5 lg:mt-10 lg:ml-10">
-            <div className="text-gray-500">Contact form</div>
+          <div className="lg:text-left mt-5 lg:mt-10 lg:ml-10 -mb-40 lg:mb-0">
+            <div className="text-gray-500 text-xl lg:text-[16px]">
+              Contact form
+            </div>
             <div className="mt-5 text-[18px]">
               Drop us your message and I'll get back to you as soon as possible.
             </div>
@@ -213,7 +215,7 @@ export default function Contact() {
               <input
                 placeholder="Thai Son"
                 type="text"
-                className="px-6 py-4 mr-[10px] w-[450px] bg-inherit border-[1px] border-gray-300 outline-none leading-5 text-gray-900 hover:border-gray-600 duration-700 placeholder:uppercase placeholder:tracking-widest placeholder:text-xs placeholder:font-semibold"
+                className="px-6 py-4 mr-[10px] w-full lg:w-[450px] bg-inherit border-[1px] border-gray-300 outline-none leading-5 text-gray-900 hover:border-gray-600 duration-700 placeholder:uppercase placeholder:tracking-widest placeholder:text-xs placeholder:font-semibold"
               />
             </div>
             <div className="mt-10 lg:mt-5 text-gray-600">Email Address</div>
@@ -221,14 +223,14 @@ export default function Contact() {
               <input
                 placeholder="sonnt03@gmail.com"
                 type="text"
-                className="px-6 py-4 mr-[10px] w-[450px] bg-inherit border-[1px] border-gray-300 outline-none leading-5 text-gray-900  hover:border-gray-600 duration-700 placeholder:uppercase placeholder:tracking-widest placeholder:text-xs placeholder:font-semibold"
+                className="px-6 py-4 mr-[10px] w-full lg:w-[450px] bg-inherit border-[1px] border-gray-300 outline-none leading-5 text-gray-900  hover:border-gray-600 duration-700 placeholder:uppercase placeholder:tracking-widest placeholder:text-xs placeholder:font-semibold"
               />
             </div>
             <div className="mt-10 lg:mt-5 text-gray-600">Your message</div>
             <div className="message mt-5 lg:mt-2">
               <textarea
                 placeholder="Hi! I would like to ask  something about mug."
-                className="px-6 py-4 mr-[10px] w-[450px] bg-inherit border-[1px] border-gray-300 outline-none leading-5 text-gray-900 hover:border-gray-600 duration-700 placeholder:uppercase placeholder:tracking-widest placeholder:text-xs placeholder:font-semibold"
+                className="px-6 py-4 mr-[10px] w-full lg:w-[450px] bg-inherit border-[1px] border-gray-300 outline-none leading-5 text-gray-900 hover:border-gray-600 duration-700 placeholder:uppercase placeholder:tracking-widest placeholder:text-xs placeholder:font-semibold"
               />
             </div>
             <div className="button mt-10 lg:mt-5">
@@ -240,32 +242,30 @@ export default function Contact() {
               </button>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center">
-            <div className="mx-20 w-0.5 right-[500px] lg:right-0 h-[500px] bg-gray-200 lg:rotate-0 rotate-90"></div>
+          <div className="flex lg:flex-col justify-center">
+            <div className="lg:mx-20 w-0.5 right-[500px] lg:right-0 h-[500px] bg-gray-200 lg:rotate-0 rotate-90"></div>
           </div>
 
           <div className="lg:text-left lg:mt-10">
-            <div className="lg:mr-20 lg:-ml-10 -mt-24 lg:mt-0">
+            <div className="lg:mr-20 lg:-ml-10 lg:mt-0 -mt-24 mb-12">
               <div className="text-gray-500">Contact form</div>
               <ul>
                 <li className="mt-[18px] text-[18px]">CoffeeStyle. Inc</li>
-                <li className="mt-5 text-[16px] text-gray-400">Pride Ave,</li>
-                <li className="mt-2 text-[16px] text-gray-400">
-                  Hamlyn Heights
-                </li>
-                <li className="mt-2 text-[16px] text-gray-400">VIC 3215</li>
-                <li className="mt-2 text-[16px] text-gray-400">Australia</li>
+                <li className="mt-5 text-[16px] text-gray-400">Dong Hoa,</li>
+                <li className="mt-2 text-[16px] text-gray-400">Di An</li>
+                <li className="mt-2 text-[16px] text-gray-400">Binh Duong</li>
+                <li className="mt-2 text-[16px] text-gray-400">VietNam</li>
                 <li className="mt-10 uppercase text-[12px] text-gray-400">
                   call us
                 </li>
                 <li className="mt-2 hover:text-coffee-400 duration-400 cursor-pointer">
-                  +1 (415) 555-1212
+                  (+84) 0977160903
                 </li>
                 <li className="mt-10 uppercase text-[12px] text-gray-400">
                   email us
                 </li>
                 <li className="mt-2 hover:text-coffee-400 duration-400 cursor-pointer">
-                  us@coffeestyle.io
+                  sonnt03@gmail.com
                 </li>
               </ul>
             </div>
